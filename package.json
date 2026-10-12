@@ -1,0 +1,23 @@
+{
+  "name": "rocher_directus_api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Directus API pour immo-demo",
+  "scripts": {
+    "start": "directus start",
+    "bootstrap": "directus bootstrap"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "directus": "12.5.0",
+    "pg": "8.23.1"
+  },
+  "allowScripts": {
+    "argon2@0.44.0": true,
+    "isolated-vm@5.0.3": true,
+    "esbuild@0.28.1": true,
+    "protobufjs@7.6.6": true
+  }
+}
