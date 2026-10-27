@@ -1,0 +1,42 @@
+{% layout "base" %} {% block content %}
+
+{% if url contains 'administration-gocleus' %}<h1>Votre accès à l’espace professionnel</h1>{% else %}<h1>Votre espace locataire en ligne</h1>{% endif %}
+
+<p style="padding-bottom: 30px">
+  Bonjour,<br /><br />
+  {% if url contains 'administration-gocleus' %}Un compte vient d’être créé pour vous sur l’espace professionnel de <i>{{ projectName }}</i>.
+  Cliquez sur le bouton ci-dessous pour choisir votre mot de passe et activer votre accès.{% else %}Votre agence vous invite à retrouver votre logement, vos paiements et vos quittances sur <i>{{ projectName }}</i>.
+  Cliquez sur le bouton ci-dessous pour choisir votre mot de passe et activer votre espace.{% endif %}
+</p>
+
+<a
+  class="button"
+  rel="noopener"
+  target="_blank"
+  href="{{url}}"
+  style="
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 8px;
+    background: #004E9B;
+    border: 1px solid #ffffff;
+  "
+>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%; mso-text-raise: 30pt">&nbsp;</i>
+  <![endif]-->
+  <span style="mso-text-raise: 15pt">Activer mon compte</span>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%">&nbsp;</i>
+  <![endif]-->
+</a>
+
+<p style="padding-top: 30px">
+  Si vous ne vous attendiez pas à cette invitation, ignorez cet e-mail ou contactez votre agence.
+</p>
+
+{% endblock %}

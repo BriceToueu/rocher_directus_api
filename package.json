@@ -5,13 +5,17 @@
   "description": "Directus API pour immo-demo",
   "scripts": {
     "start": "directus start",
-    "bootstrap": "directus bootstrap"
+    "bootstrap": "directus bootstrap",
+    "maildev": "maildev --smtp 1025 --web 1080 --ip 127.0.0.1",
+    "email:reel": "node scripts/mode-email.mjs reel",
+    "email:maildev": "node scripts/mode-email.mjs maildev"
   },
   "engines": {
     "node": ">=22"
   },
   "dependencies": {
     "directus": "12.5.0",
+    "pdfkit": "^0.17.2",
     "pg": "8.23.1"
   },
   "allowScripts": {
@@ -19,5 +23,8 @@
     "isolated-vm@5.0.3": true,
     "esbuild@0.28.1": true,
     "protobufjs@7.6.6": true
+  },
+  "devDependencies": {
+    "maildev": "^2.2.1"
   }
 }

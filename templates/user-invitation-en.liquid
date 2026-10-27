@@ -1,0 +1,42 @@
+{% layout "base" %} {% block content %}
+
+{% if url contains 'administration-gocleus' %}<h1>Your access to the business area</h1>{% else %}<h1>Your online tenant account</h1>{% endif %}
+
+<p style="padding-bottom: 30px">
+  Hello,<br /><br />
+  {% if url contains 'administration-gocleus' %}An account has just been created for you in the <i>{{ projectName }}</i> business area.
+  Click the button below to choose your password and activate your access.{% else %}Your agency invites you to view your home, payments and rent receipts on <i>{{ projectName }}</i>.
+  Click the button below to choose your password and activate your account.{% endif %}
+</p>
+
+<a
+  class="button"
+  rel="noopener"
+  target="_blank"
+  href="{{url}}"
+  style="
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 8px;
+    background: #004E9B;
+    border: 1px solid #ffffff;
+  "
+>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%; mso-text-raise: 30pt">&nbsp;</i>
+  <![endif]-->
+  <span style="mso-text-raise: 15pt">Activate my account</span>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%">&nbsp;</i>
+  <![endif]-->
+</a>
+
+<p style="padding-top: 30px">
+  If you were not expecting this invitation, ignore this email or contact your agency.
+</p>
+
+{% endblock %}

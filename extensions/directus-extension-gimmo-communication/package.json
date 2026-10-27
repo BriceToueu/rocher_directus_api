@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-communication",
+  "description": "G-immo : envoi des messages planifiés, quittances par e-mail et relances automatiques.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

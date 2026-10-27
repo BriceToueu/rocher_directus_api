@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-comptabilite",
+  "description": "G-immo : comptabilité en partie double, écritures automatiques (encaissements, reversements, maintenance).",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

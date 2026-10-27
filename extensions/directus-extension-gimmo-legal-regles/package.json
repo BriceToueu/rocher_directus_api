@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-legal-regles",
+  "description": "G-immo : documents légaux — une version acceptée ne peut plus être modifiée ni supprimée.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

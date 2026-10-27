@@ -1,0 +1,41 @@
+{% layout "base" %} {% block content %}
+
+<h1>Confirmez votre adresse e-mail</h1>
+
+<p style="padding-bottom: 30px">
+  Bienvenue sur <i>{{ projectName }}</i> !<br /><br />
+  Pour activer votre compte et commencer à enregistrer vos biens favoris,
+  confirmez votre adresse e-mail en cliquant sur le bouton ci-dessous.
+</p>
+
+<a
+  class="button"
+  rel="noopener"
+  target="_blank"
+  href="{{url}}"
+  style="
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 8px;
+    background: #004E9B;
+    border: 1px solid #ffffff;
+  "
+>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%; mso-text-raise: 30pt">&nbsp;</i>
+  <![endif]-->
+  <span style="mso-text-raise: 15pt">Confirmer mon adresse e-mail</span>
+  <!--[if mso]>
+    <i style="letter-spacing: 25px; mso-font-width: -100%">&nbsp;</i>
+  <![endif]-->
+</a>
+
+<p style="padding-top: 30px">
+  Si vous n’avez pas créé de compte sur {{ projectName }}, ignorez simplement cet e-mail.
+</p>
+
+{% endblock %}

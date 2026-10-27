@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-abonnement-regles",
+  "description": "G-immo : abonnements — facture des paiements enregistrés, protection des factures, suivi des paiements en attente.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

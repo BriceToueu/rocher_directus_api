@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-notifications",
+  "description": "G-immo : cloche des notifications et préférences de canal (application, e-mail, SMS) par type d'événement.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "endpoint",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

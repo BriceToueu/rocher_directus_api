@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-emails",
+  "description": "G-immo : objets des e-mails système (réinitialisation, inscription, invitation) en français.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

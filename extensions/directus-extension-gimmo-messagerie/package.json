@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-messagerie",
+  "description": "G-immo : messagerie (agence et locataire, équipe, support de la plateforme).",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "endpoint",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

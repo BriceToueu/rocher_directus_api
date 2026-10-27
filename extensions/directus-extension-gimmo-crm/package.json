@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-crm",
+  "description": "G-immo : CRM (prospects, journal des échanges, demandes du site public).",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

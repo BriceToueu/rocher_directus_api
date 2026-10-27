@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-acces",
+  "description": "G-immo : licences des comptes entreprises, modules selon le type de compte, limites des offres.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "hook",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}

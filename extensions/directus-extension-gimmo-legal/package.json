@@ -1,0 +1,13 @@
+{
+  "name": "directus-extension-gimmo-legal",
+  "description": "G-immo : acceptation des CGU et de la politique de confidentialité (inscription, invitation, nouvelles versions).",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "directus:extension": {
+    "type": "endpoint",
+    "path": "index.js",
+    "source": "index.js",
+    "host": "^12.0.0"
+  }
+}
